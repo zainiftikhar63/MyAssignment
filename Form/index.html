@@ -1,0 +1,471 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Form</title>
+
+<style>
+	
+		h1 u
+	{
+		color: #6A5ACD	
+	}
+	
+	.form
+	{
+		background-color: #6A5ACD;
+		
+	}
+	
+	form
+	{
+		padding-top:2%;
+		padding-bottom:4%;
+	}
+	
+	.col-4
+	{
+		width: 15%;
+		float: left;
+		margin-left: 10%
+	}
+	.col-8
+	{
+		width: 80%;
+	}
+	
+	label,span,table
+	{
+		color: aliceblue;
+		font-family: Sans-serif
+	}
+	
+	button
+	{
+		background: rgba(81,195,74,1.00);
+		border: none;
+		padding: 14px;
+		font-size: 15px;
+		border-radius: 5px;
+		color: aliceblue;
+		
+	}
+	a
+	{
+		text-decoration: none;
+		color: aliceblue;
+	}
+	
+	
+		ul li 
+	{
+	
+		list-style: none;
+		
+		font-size: 20px;
+		
+	}
+	
+	ul li ul
+	{
+		display: none;
+		list-style: none
+	}
+	
+	
+	ul li ul li{
+		
+		margin-top: 20px;
+		clear: both;
+	
+		
+			
+	}
+	ul li:hover ul{
+		display: block;
+		text-decoration: none;
+		margin-left: -12%;
+		padding-top: 3%;
+	}
+	
+	.nav
+	{
+		width: 25%;
+		float: left;
+		
+		height: 180px
+	}
+	ul li ul li a
+	{
+		color: #83BBB1;
+		text-decoration: none
+	}
+	
+		ul li ul li a:hover
+	{
+		color: #458479;
+		text-decoration: none;
+		
+	}
+	
+	.logo img
+	{
+		margin-left: 8%
+	}
+
+	
+		.logo h1 u
+	{
+		margin-left: 10%
+	}
+	
+
+	
+	
+	</style>
+
+</head>
+
+<body>
+
+<div  class="nav">
+<ul>
+	<li><u>Back to</u>
+	<ul>
+		
+		<li><a href="../index.html">Assignments</a></li>
+		<li><a href="../Periodic Table.html">The Periodic Table</a></li>
+		<li><a href="index.html">Form</a></li>
+	</ul>
+	
+	</li>
+	
+</ul>
+</div>
+
+<div class="logo">
+
+	<img src="logo.png"/>
+	<h1><u>Student Registration Form</u></h1>
+	
+	
+	</div>
+	
+	<div class="form">
+		
+		<form>
+			
+			<div class="row">
+			
+			<div class="col-4">
+			
+			<label for="fname">FIRST NAME</label>
+				
+			</div>
+			
+			
+			<div class="col-8">
+			
+			<input type="text" id="fname"  name="firstname" placeholder="First Name..." maxlength="30" />
+			<span>(max 30 char a-z and A-Z)</span>	
+			</div>
+			
+				
+			
+			</div>
+			
+			<br>
+			
+			<div class="row">
+				<div class="col-4">
+			
+			<label for="lname">LAST NAME</label>
+				
+			</div>
+			
+			
+			<div class="col-8">
+			
+			<input type="text" id="lname" width="50%" name="lastname" placeholder="Last Name..."  maxlength="30" />
+				<span>(max 30 char a-z and A-Z)</span>
+			</div>
+			
+				
+			</div>
+			
+					<br>
+			<div class="row">
+				<div class="col-4">
+			
+			<label for="dob">DATE OF BIRTH </label>
+				
+			</div>
+			
+			
+			<div class="col-8">
+			
+			<input type="date" id="dob" style="width: 15.5%"  name="dateofbirth"  />
+				
+			</div>
+			</div>
+			
+			<br>
+			<div class="row">
+				<div class="col-4">
+			
+			<label for="email">EMAIL ID </label>
+				
+			</div>
+			
+			
+			<div class="col-8">
+			
+			<input type="email" id="email"   name="emailid" placeholder="Email Address..." />
+				
+			</div>
+			</div>
+			
+			
+			<br>
+			<div class="row">
+				<div class="col-4">
+			
+			<label for="no">MOBILE NUMBER</label>
+				
+			</div>
+			
+			
+			<div class="col-8">
+			
+			<input type="text" id="no"   name="number" placeholder="Number..." maxlength="11" />
+			<span>(10 digit Number)</span>
+				
+			</div>
+			</div>
+
+
+			
+			<br>
+			<div class="row">
+				<div class="col-4">
+			
+			<label >GENDER</label>
+				
+			</div>
+			
+			
+			<div class="col-8">
+			
+			<input type="radio"   name="gender"  /><label>Male</label>
+			<input type="radio"   name="gender"  /><label>Female</label>
+				
+			</div>
+			</div>
+			
+			<br>
+			<div class="row">
+				<div class="col-4">
+			
+			<label for="adr">ADDRESS</label>
+				
+			</div>
+			
+			
+			<div class="col-8">
+			
+			<textarea id="adr" name="address" cols="30" placeholder="Address..." rows="4"></textarea>
+				
+			</div>
+			</div>
+			
+			<br>
+			<div class="row">
+				<div class="col-4">
+			
+			<label for="city">CITY </label>
+				
+			</div>
+			
+			
+			<div class="col-8">
+			
+			<input type="text" id="city"   name="city" placeholder="City..." />
+			<span>(max 30 characters a-z and A-Z)</span>
+				
+			</div>
+			</div>
+			
+				<br>
+			<div class="row">
+				<div class="col-4">
+			
+			<label for="pin">PIN CODE</label>
+				
+			</div>
+			
+			
+			<div class="col-8">
+			
+			<input type="text" id="pin"   name="pincode" placeholder="Pin Code..."  maxlength="6" />
+			<span>(6 digit number)</span>
+				
+			</div>
+			</div>			
+
+			<br>
+			<div class="row">
+				<div class="col-4">
+			
+			<label for="stt">STATE</label>
+				
+			</div>
+			
+			
+			<div class="col-8">
+			
+			<input type="text" id="stt"   name="state" placeholder="State..."  maxlength="30" />
+			<span>(max 30 characters a-z and A-Z)</span>
+				
+			</div>
+			</div>
+			
+			<br>
+			<div class="row">
+				<div class="col-4">
+			
+			<label for="cntry">COUNTRY</label>
+				
+			</div>
+			
+			
+			<div class="col-8">
+			
+			<input type="text" id="cntry"   name="country" placeholder="Country..." />
+			
+				
+			</div>
+			</div>
+			
+			
+			<br>
+			<div class="row">
+				<div class="col-4">
+			
+			<label>HOBBIES</label>
+				
+			</div>
+			
+			
+			<div class="col-8">
+			
+			<input type="checkbox"  name="drawing"  /><label>Drawing</label>
+			<input type="checkbox"  name="singing"  /><label>Singing</label>
+			<input type="checkbox"  name="Dancing"  /><label>Dancing</label>
+			<input type="checkbox"  name="sketching"/><label>Sketching</label>
+			<input type="checkbox"  name="others"  /><label>Other</label><input type="text" name="others"/>
+			
+				
+			</div>
+			</div>
+			
+			<br>
+			<div class="row">
+				<div class="col-4">
+			
+			<label for="qly">QUALIFICATION</label>
+				
+			</div>
+			
+			
+			<div class="col-8">
+			
+			<table>
+				<tr>
+					<th>S.no</th>
+					<th>Examination</th>
+					<th>Board</th>
+					<th>Percentage</th>
+					<th>Year of Passing</th>
+				</tr>
+				
+				<tr>
+					<td>1</td>
+					<td>Class X</td>
+					<td><input type="text" name="board"/></td>
+					<td><input type="text" name="percentage"/></td>
+					<td><input type="text" name="master"/></td>
+				</tr>
+				
+				
+				<tr>
+					<td>2</td>
+					<td>Class XII</td>
+					<td><input type="text" name="board"/></td>
+					<td><input type="text" name="percentage"/></td>
+					<td><input type="text" name="master"/></td>
+				</tr>
+				
+				<tr>
+					<td>3</td>
+					<td>Graduation</td>
+					<td><input type="text" name="board"/></td>
+					<td><input type="text" name="percentage"/></td>
+					<td><input type="text" name="master"/></td>
+				</tr>
+				
+				<tr>
+					<td>4</td>
+					<td>Masters</td>
+					<td><input type="text" name="board"/></td>
+					<td><input type="text" name="percentage"/></td>
+					<td><input type="text" name="master"/></td>
+				</tr>
+				
+				<tr>
+					<td colspan="2"></td>
+					<td >(10 char max)</td>
+					<td>(upto 2 decimal)</td>
+				</tr>
+				
+				
+			</table>
+				
+			</div>
+			</div>
+			
+			<br>
+			<div class="row">
+				<div class="col-4">
+			
+			<label >COURSES<br> APPLIED FOR</label>
+				
+			</div>
+			
+			
+			<div class="col-8">
+			
+			<input type="radio"   name="course"  /><label>BCA</label>
+			<input type="radio"   name="course"  /><label>B.Com</label>
+			<input type="radio"   name="course"  /><label>B.Sc</label>
+			<input type="radio"   name="course"  /><label>B.A</label>
+				
+			</div>
+			</div>
+			
+			<br>
+			
+			<div class="col-12">
+				<center>
+				<button><a href="thanku.html">Submit</a></button>
+				<button><a href="#">Reset&nbsp;</a></button>
+				</center>
+			</div>
+			
+		</form>
+		
+	</div>
+	
+
+
+</body>
+</html>
